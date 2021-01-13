@@ -27,7 +27,7 @@ $('.nav li a').bind('click', function(e){
 $(document).ready(function(){
 	
 	var obj = document.createElement("audio");
-	obj.src = "../HTML/audio/audio.mp3";
+	obj.src = "audio/audio.mp3";
 	obj.volume = 1;
 	obj.autoPlay = true;
 	obj.preLoad = true;       
@@ -35,7 +35,7 @@ $(document).ready(function(){
 	$('#playNowBtn').click(function(e){
 		var $playNowButton = $(this);																/* button variable */
 		var $playlist = $playNowButton.parent().parent();						/* play list section class */
-		var $disk			= $playlist.children().children('.disk');			/* disk image */
+		var $disk = $playlist.children().children('.disk');			/* disk image */
 		
 		if ($disk.hasClass('rotating')) {
 			$disk.removeClass('rotating');
